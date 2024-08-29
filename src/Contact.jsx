@@ -23,6 +23,10 @@ const Contact = () => {
             const response = await Axios.post('http://localhost:3000/contact', data);
             console.log('Response:', response.data);
             alert("Congratulations, submitted successfully!");
+            setName('');
+            setEmail('');
+            setSubject('');
+            setMessage('');
         } catch (error) {
             console.error('There was an error submitting the form!', error);
         }

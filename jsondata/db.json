@@ -1,23 +1,57 @@
 {
   "contact": [
     {
-      "name": "akiccnkxnckn",
-      "email": "cnxncnxncn@gmail.com",
-      "subject": "sfnndnvncvndnfnvngnfcvc",
-      "message": "dnnvnnvncvnckvv",
+      "name": "akhi",
+      "email": "akhi18@gmail.com",
+      "subject": "dishes",
+      "message": "give information about dishes",
       "id": 1
+    },
+    {
+      "name": "shruti",
+      "email": "shruti@gmail.com",
+      "subject": "chef",
+      "message": "how many dishes your chefs cooked ???\n",
+      "id": 2
+    },
+    {
+      "name": "mahi",
+      "email": "mahi@gmail.com",
+      "subject": "order",
+      "message": "how can i order food at home ???",
+      "id": 3
     }
   ],
   "booking-table": [
     {
-      "name": "Akhilesh Ramesh Kumbhar",
-      "email": "assfsdgfdgdf@gmail.com",
-      "phone": "81778282828",
-      "date": "2024-09-04",
-      "time": "04:55",
-      "people": "5",
-      "message": "asdasdzc",
+      "name": "Akhi",
+      "email": "akhi18@gmail.com",
+      "phone": "8177819283",
+      "date": "2024-08-29",
+      "time": "16:05",
+      "people": "7",
+      "message": "book a table for 7 people",
       "id": 1
+    },
+    {
+      "name": "mahi",
+      "email": "mahi@gmail.com",
+      "phone": "9876543212",
+      "date": "2024-08-29",
+      "time": "17:05",
+      "people": "5",
+      "message": "No Message",
+      "id": 2
+    },
+    {
+      "name": "Piya ",
+      "email": "piya@gmail.com",
+      "phone": "8877446637",
+      "date": "2024-08-29",
+      "time": "19:08",
+      "people": "7",
+      "message": "No Message",
+      "id": 3
     }
   ]
 }

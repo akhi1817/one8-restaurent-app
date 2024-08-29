@@ -11,15 +11,16 @@ import Contactdata from './Contactdata';
 import Tabledata from './Tabledata';
 import Footer from './Footer';
 import Menu from './Menu';
+import Admin from './Admin';
 
 const App = () => {
   return (
     <>
     <Router>
       <Navbar/>
+      <Admin/>
       <Routes>
         <Route path='/' element={<Home/>}/>
-      
         <Route path='/about' element={<About/>}/>
         <Route path='/contact' element={<Contact/>}/>
         <Route path='/tableform' element={<Tableform/>}/>
@@ -29,6 +30,7 @@ const App = () => {
         <Route path='/contactdata' element={<Contactdata/>}/>
         <Route path='/tabledata' element={<Tabledata/>}/>
         <Route path='/footer' element={<Footer/>}/>
+        <Route path='/admin' element={<Admin/>}/>
       </Routes>
      <Footer/>
     </Router>

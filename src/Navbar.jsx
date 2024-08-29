@@ -16,7 +16,7 @@ const Navbar = () => {
                         <li className='nav-item px-3 '><NavLink to='/' className='nav-link text-light'>Home</NavLink></li>
                         <li className='nav-item px-3 '><NavLink to='/about'className='nav-link text-light'>About</NavLink></li>
                         <li className='nav-item px-3 '><NavLink to='/chef'className='nav-link text-light'>Chef</NavLink></li>
-                        <li className='nav-item px-3 '><NavLink to='/meny'className='nav-link text-light'>Menu</NavLink></li>
+                        <li className='nav-item px-3 '><NavLink to='/menu'className='nav-link text-light'>Menu</NavLink></li>
                         <li className='nav-item px-3 '><NavLink to='/events'className='nav-link text-light'>Events</NavLink></li>
                         <li className='nav-item px-3 '><NavLink to='/contact'className='nav-link text-light'>Contact</NavLink></li>
                         <li className='nav-item px-3 ms-5 '><NavLink to='/tableform'className='nav-link text-light'><button className='btn btn-danger text-light rounded rounded-pill'>Book A Table</button></NavLink></li>

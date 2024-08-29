@@ -7,6 +7,9 @@ import Tableform from './Tableform'
 import Menu from './Menu'
 
 const Home = () => {
+
+  
+
   return (
     <>
     <div className='container-fluid bg-light mt-5 '>
@@ -18,10 +21,9 @@ const Home = () => {
                 <h1 className='text-dark'>Enjoy Your Healthy<br/>
                 Delicious Food</h1>
                 <h3 className='text-secondary'>We are team of talented designers making<br/> websites with Bootstrap</h3>
-                <div className='d-flex'>
-                    <button className='btn btn-danger text-light rounded-pill px-4 my-3'>Book A Table</button>
-                    <p className='text-dark px-4 my-3'><i class="fa fa-play me-3"></i>
-                    Watch Video</p>
+                <div className='d-flex px-3 mt-5'>
+                    <button className='btn btn-danger text-light rounded-pill mx-3'>Book A Table</button>
+                    <button className='btn btn-outline-success rounded-pill mx-3'><i class="fa fa-play me-3"></i>Watch Video</button>
                 </div>
             </div>
             <div className='col-md-6 ms-5'>

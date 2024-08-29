@@ -29,6 +29,13 @@ const Tableform = () => {
             const response = await Axios.post('http://localhost:3000/booking-table', data);
             console.log('Response:', response.data);
             alert("Table booked successfully!");
+            setName('');
+            setEmail('');
+            setPhone('');
+            setDate('');
+            setTime('');
+            setPeople('');
+            setMessage('');
         } catch (error) {
             console.error('There was an error submitting the form!', error);
         }
