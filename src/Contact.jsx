@@ -7,9 +7,19 @@ const Contact = () => {
     const [subject, setSubject] = useState('');
     const [message, setMessage] = useState('');
 
-    const saveForm = async (e) => {
-        e.preventDefault();
+    const [nameerror, setNameerror] = useState('');
+    const [emailerror, setEmailerror] = useState('');
+    const [subjecterror, setSubjecterror] = useState('');
+    const [messageerror, setMessageerror] = useState('');
 
+
+    
+
+    const saveForm = async (e) => {
+        
+    if (formValidation()){
+
+     
         const data = {
             name: name,
             email: email,
@@ -17,7 +27,9 @@ const Contact = () => {
             message: message
         };
 
-        console.log('Submitted Data:', data);
+
+   
+        // console.log('Submitted Data:', data);
 
         try {
             const response = await Axios.post('http://localhost:3000/contact', data);
@@ -30,7 +42,48 @@ const Contact = () => {
         } catch (error) {
             console.error('There was an error submitting the form!', error);
         }
+    }
+    e.preventDefault();
     };
+
+    const formValidation=()=>{
+        let error=true;
+        // name
+        if(name===""){
+            setNameerror("please enter your name");
+            error=false;
+        }
+        else{
+            setNameerror('');
+        }
+        // email
+        if(email===""){
+            setEmailerror("please write your gmail properly");
+            error=false;
+        }
+        else{
+            setEmailerror('');
+        }
+        // subject
+        if(subject===""){
+            setSubjecterror("Please write your subject Otherwise write No subject");
+            error=false;
+        }
+        else{
+            setSubjecterror('');
+        }
+        // message
+        if(message===""){
+            setMessageerror("please write your message Otherwise write no message");
+            error=false;
+        }
+        else{
+            setMessageerror('');
+        }
+        return error;
+
+    }
+
 
     return (
         <>
@@ -43,47 +96,32 @@ const Contact = () => {
                         <form onSubmit={saveForm}>
                             <div className='col-md-12 d-flex'>
                                 <div className='col-md-6 px-3'>
-                                    <input
-                                        type='text'
-                                        className='form-control'
-                                        placeholder='Your Name'
-                                        value={name}
-                                        onChange={(e) => setName(e.target.value)}
-                                    />
+                                    <input type='text' className='form-control' placeholder='Your Name' value={name}  onChange={(e) => setName(e.target.value)}/>
+                                    {
+                                        nameerror?<p className='text-danger fw-bold'>{nameerror}</p>:null
+                                    }
                                 </div>
                                 <div className='col-md-6 px-3'>
-                                    <input
-                                        type='email'
-                                        className='form-control'
-                                        placeholder='Your Email'
-                                        value={email}
-                                        onChange={(e) => setEmail(e.target.value)}
-                                    />
+                                    <input type='email' className='form-control' placeholder='Your Email' value={email} onChange={(e) => setEmail(e.target.value)} />
+                                    {
+                                        emailerror?<p className='text-danger fw-bold'>{emailerror}</p>:null
+                                    }
                                 </div>
                             </div>
                             <div className='col-md-12 mt-3 px-3'>
-                                <input
-                                    type='text'
-                                    className='form-control'
-                                    placeholder='Subject'
-                                    value={subject}
-                                    onChange={(e) => setSubject(e.target.value)}
-                                />
+                                <input type='text' className='form-control' placeholder='Subject' value={subject} onChange={(e) => setSubject(e.target.value)} />
+                                {
+                                        subjecterror?<p className='text-danger fw-bold'>{subjecterror}</p>:null
+                                }
                             </div>
                             <div className='col-md-12 mt-3 px-3'>
-                                <textarea
-                                    rows='5'
-                                    cols='50'
-                                    className='form-control'
-                                    placeholder='Message'
-                                    value={message}
-                                    onChange={(e) => setMessage(e.target.value)}
-                                ></textarea>
+                                <textarea rows='5' cols='50'className='form-control' placeholder='Message' value={message} onChange={(e) => setMessage(e.target.value)} ></textarea>
+                                {
+                                        messageerror?<p className='text-danger fw-bold'>{messageerror}</p>:null
+                                }
                             </div>
                             <div className='col-md-12 mt-3 px-3 text-center'>
-                                <button className='btn btn-danger px-3 my-3 rounded-pill'>
-                                    Send Message
-                                </button>
+                                <button className='btn btn-danger px-3 my-3 rounded-pill'> Send Message</button>
                             </div>
                         </form>
                     </div>
