@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import Axios  from 'axios';
+import { NavLink } from 'react-router-dom';
 
 const Contactdata = () => {
 
@@ -55,13 +56,14 @@ const Contactdata = () => {
                                 {
                                         data.map((val)=>{
                                             return(
-                                                <tr>
+                                                <tr key={val.id}>
                                                     <td>{val.id}</td>
                                                     <td>{val.name}</td>
                                                     <td>{val.email}</td>
                                                     <td>{val.subject}</td>
                                                     <td>{val.message}</td>
-                                                    <td><i class='fa fa-trash fw-bold text-danger'onClick={()=>{if(window.confirm('Are you sure ?')){DeleteUser(val.id)}}}></i></td>
+                                                    <td><i class='fa fa-trash fw-bold text-danger pe-auto'onClick={()=>{if(window.confirm('Are you sure ?')){DeleteUser(val.id)}}}></i></td>
+                                                    <td><NavLink to={`/editcontact/${val.id}`}><i class='fa fa-edit fw-bold text-success pe-auto'></i></NavLink></td>
                                                 </tr>
                                             )
                                         })
@@ -81,4 +83,4 @@ const Contactdata = () => {
 
 }
 
-export default Contactdata
+export default Contactdata;

@@ -213,7 +213,7 @@ const showdinneritem=()=>{
                     :null
                 }
                 {
-                    showdinner &&
+                    showdinner ?
                     Dinner.map((val)=>{
                         return(
                             <div className='col-md-4'>
@@ -226,7 +226,7 @@ const showdinneritem=()=>{
 
                             </div>
                         )
-                    })
+                    }):null
                 }
                </div>
             </div>

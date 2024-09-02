@@ -9,7 +9,7 @@ const Chef = () => {
     <h1 className='text-dark text-center'>Our Professional Chefs</h1>
     <hr/>
         <div className='col-md-12 mt-3 d-flex'>
-            <div className='col-md-4 p-3 my-3'>
+            <div className='col-md-4 col-sm-12 p-3 my-3'>
                 <div className='card'>
                     <div className='card-body text-center'>
                         <img src='images/chefs/chefs-1.jpg' className='img-fluid rounded rounded-circle' style={{width:'300px', height:'300px'}}/>
@@ -22,7 +22,7 @@ const Chef = () => {
                     </div>
                 </div>
             </div>
-            <div className='col-md-4 p-3 my-3'>
+            <div className='col-md-4 col-sm-12 p-3 my-3'>
                 <div className='card'>
                     <div className='card-body text-center'>
                         <img src='images/chefs/chefs-2.jpg' className='img-fluid rounded rounded-circle' style={{width:'300px', height:'300px'}}/>
@@ -35,7 +35,7 @@ const Chef = () => {
                     </div>
                 </div>
             </div>
-            <div className='col-md-4 p-3 my-3'>
+            <div className='col-md-4 col-sm-12 p-3 my-3'>
                 <div className='card'>
                     <div className='card-body text-center'>
                         <img src='images/chefs/chefs-3.jpg' className='img-fluid rounded rounded-circle' style={{width:'300px', height:'300px'}}/>

@@ -12,6 +12,8 @@ import Tabledata from './Tabledata';
 import Footer from './Footer';
 import Menu from './Menu';
 import Admin from './Admin';
+import App_Layout from './App_Layout';
+import Editcontact from './Editcontact';
 
 const App = () => {
   return (
@@ -20,7 +22,8 @@ const App = () => {
       <Navbar/>
       <Admin/>
       <Routes>
-        <Route path='/' element={<Home/>}/>
+        <Route path='/' element={<App_Layout/>}/>
+        <Route index element={<Home/>}/>
         <Route path='/about' element={<About/>}/>
         <Route path='/contact' element={<Contact/>}/>
         <Route path='/tableform' element={<Tableform/>}/>
@@ -29,8 +32,13 @@ const App = () => {
         <Route path='/events' element={<Events/>}/>
         <Route path='/contactdata' element={<Contactdata/>}/>
         <Route path='/tabledata' element={<Tabledata/>}/>
+        <Route path='/editcontact/:id' element={<Editcontact/>}/>
         <Route path='/footer' element={<Footer/>}/>
         <Route path='/admin' element={<Admin/>}/>
+
+
+        {/* fallback Routing */}
+      
       </Routes>
      <Footer/>
     </Router>
