@@ -8,7 +8,7 @@ const Navbar = () => {
     <div className='container-fluid'>
         <div className='row'>
 
-                <nav className='navbar navbar-expand-lg bg-dark text-center text-warning fw-bold'>
+                <nav className='navbar navbar-expand-lg bg-primary text-center text-warning fw-bold'>
                     <NavLink to='/' className='navbar-brand text-warning' >ONE8 Restaurent</NavLink>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span></button>  

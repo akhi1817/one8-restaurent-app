@@ -52,7 +52,7 @@ const Tabledata = () => {
                         {
                             data.map((val)=>{
                                 return(
-                                    <tr>
+                                    <tr key={val.id}>
                                         <td>{val.id}</td>
                                         <td>{val.name}</td>
                                         <td>{val.email}</td>

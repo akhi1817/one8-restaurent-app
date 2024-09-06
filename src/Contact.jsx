@@ -90,7 +90,7 @@ const Contact = () => {
             <div className='container-fluid p-5 mt-5'>
                 <div className='row'>
                     <h4 className='text-secondary text-center'>Contact Us</h4>
-                    <h1 className='text-dark text-center'>Need Help? Contact Us</h1>
+                    <h1 className='text-dark text-center'>Need Help? <span className='text-danger'>Contact Us</span></h1>
                     <hr />
                     <div className='col-md-12 mt-5 p-5 form-control text-center'>
                         <form onSubmit={saveForm}>

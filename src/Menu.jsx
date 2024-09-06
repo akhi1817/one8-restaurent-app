@@ -148,9 +148,9 @@ const showdinneritem=()=>{
     <div className="container-fluid mt-5">
         <div className='row px-3 mt-3'>
         <h4 className='text-secondary text-center'>Our Menu</h4>
-        <h1 className='text-dark text-center'>Check Our Yummy Menu</h1>
+        <h1 className='text-dark text-center mb-5'>Check Our <span className='text-danger'>Yummy Menu</span></h1>
         <hr/>
-            <div className='col-md-12'>
+            <div className='col-md-12 p-3'>
                 <div className='col-md-12 text-center'>
                 <button className='btn btn-danger px-3 mx-3' onClick={()=>showallProducts()}>All Items</button>
                 <button className='btn btn-success px-3 mx-3'onClick={()=>showstarteritem()}>Starter</button>
@@ -230,6 +230,108 @@ const showdinneritem=()=>{
                 }
                </div>
             </div>
+        </div>
+    </div>
+
+    <div className="container-fluid mt-5">
+        <div className='row px-3 mt-3'>
+        <h4 className='text-secondary text-center'>Testimonials</h4>
+        <h1 className='text-dark text-center mb-5'>What Are They <span className='text-danger'>Saying About Us</span></h1>
+        <hr/>
+
+                <div className='col-md-12 justify-content-center align-item-center mt-3 '>
+                    <div className='row p-3 '>
+                        <div className='col-md-6 mt-4'>
+                            <div className='card'>
+                                <div className='card-body d-flex bg-primary text-white'>
+                                    <div>
+                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum doloribus repellendus perferendis ut natus voluptas vero minima sapiente sint in.</p>
+                                        <h5>Sara Wilson</h5>
+                                        <h6>Designer</h6>
+                                        <i className='fa fa-star text-warning '></i>
+                                        <i className='fa fa-star text-warning '></i>
+                                        <i className='fa fa-star text-warning '></i>
+                                        <i className='fa fa-star text-warning '></i>
+                                        <i className='fa fa-star text-warning '></i>
+                                        
+                                    </div>
+                                    <div>
+                                        <img src='images/testimonials/testimonials-2.jpg' alt='testimonials' className='img-fluid rounded rounded-circle w-75 h-75'/>                        
+                                    </div>
+                                </div>
+                            </div>
+
+                           
+                        </div>
+                        <div className='col-md-6 mt-4'>
+                            <div className='card'>
+                                <div className='card-body d-flex bg-primary text-white'>
+                                    <div>
+                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum doloribus repellendus perferendis ut natus voluptas vero minima sapiente sint in.</p>
+                                        <h5>Saul Goodman</h5>
+                                        <h6>CEO and Founder</h6>
+                                        <i className='fa fa-star text-warning '></i>
+                                        <i className='fa fa-star text-warning '></i>
+                                        <i className='fa fa-star text-warning '></i>
+                                        <i className='fa fa-star text-warning '></i>
+                                        <i className='fa fa-star text-warning '></i>
+                                        
+                                    </div>
+                                    <div>
+                                        <img src='images/testimonials/testimonials-1.jpg' alt='testimonials' className='img-fluid rounded rounded-circle w-75 h-75'/>                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                           
+                        </div>
+                        <div className='col-md-6 mt-4'>
+                            <div className='card'>
+                                <div className='card-body d-flex bg-primary text-white'>
+                                    <div>
+                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum doloribus repellendus perferendis ut natus voluptas vero minima sapiente sint in.</p>
+                                        <h5>Jena Karlis</h5>
+                                        <h6>Store Owner</h6>
+                                        <i className='fa fa-star text-warning '></i>
+                                        <i className='fa fa-star text-warning '></i>
+                                        <i className='fa fa-star text-warning '></i>
+                                        <i className='fa fa-star text-warning '></i>
+                                        <i className='fa fa-star text-warning '></i>
+                                        
+                                    </div>
+                                    <div>
+                                        <img src='images/testimonials/testimonials-3.jpg' alt='testimonials' className='img-fluid rounded rounded-circle w-75 h-75'/>                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                           
+                        </div>
+                        <div className='col-md-6 mt-4'>
+                            <div className='card'>
+                                <div className='card-body d-flex bg-primary text-white'>
+                                    <div>
+                                        <p >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum doloribus repellendus perferendis ut natus voluptas vero minima sapiente sint in.</p>
+                                        <h5>John Larson</h5>
+                                        <h6>Entrepreneur</h6>
+                                        <i className='fa fa-star text-warning '></i>
+                                        <i className='fa fa-star text-warning '></i>
+                                        <i className='fa fa-star text-warning '></i>
+                                        <i className='fa fa-star text-warning '></i>
+                                        <i className='fa fa-star text-warning '></i>
+                                        
+                                    </div>
+                                    <div>
+                                        <img src='images/testimonials/testimonials-4.jpg' alt='testimonials' className='img-fluid rounded rounded-circle w-75 h-75'/>                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                           
+                        </div>
+                    </div>
+
+                </div>
         </div>
     </div>
     </>

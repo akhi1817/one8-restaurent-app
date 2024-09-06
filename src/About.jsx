@@ -7,7 +7,7 @@ const About = () => {
         <div className='row'>
         <div className='col-md-12 mt-5'>
             <h4 className='text-secondary text-center'>About Us</h4>
-            <h1 className='text-dark text-center'>Learn More About Us</h1>
+            <h1 className='text-dark text-center'>Learn More <span className='text-danger'>About Us</span></h1>
             <hr/>
                 <div className='col-md-12 d-flex flex-direction-wrap'>
                     <div className='col-md-6 ms-5 mt-3'>
@@ -23,15 +23,15 @@ const About = () => {
                 <div className='col-md-12 d-flex flex-direction-wrap-reverse mt-3'>
                     <div className='col-md-6 ms-5 mt-3 px-5 mx-3'>
                         <div className='col-md-6 border border-4 border-secondary text-center px-3 mx-3 '>
-                          <h3 className='text-dark'>Book A Table</h3> 
+                          <h3 className='text-secondary'>Book A Table</h3> 
                           <h2 className='text-danger'>+91 8177819283</h2>
                         </div>
                     </div>
                     <div className='col-md-6 mt-3'>
-                        <img src='images/about-2.jpg' className='img-fluid' style={{width:'500px', height:'300px'}}/>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/_dui6BUmMBg?si=ym-YR74k0FmQLycO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
                 </div>
-                {/* testimonials */}
+            
             
                
                

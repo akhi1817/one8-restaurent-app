@@ -6,11 +6,12 @@ const Contactdata = () => {
 
 
     const[data,setdata]=useState([]);
+    const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:3000/contact';
 
     const LoadData=async()=>{
 
         try{
-            const result=await Axios.get('http://localhost:3000/contact');
+            const result=await Axios.get(API_URL);
             console.log(result.data);
             console.log("Success!!!");
             setdata(result.data);
@@ -50,6 +51,8 @@ const Contactdata = () => {
                                     <th>Email</th>
                                     <th>Subject</th>
                                     <th>Message</th>
+                                    <th></th>
+                                    <th></th>
                                 </tr>
                             </thead>
                             <tbody>
