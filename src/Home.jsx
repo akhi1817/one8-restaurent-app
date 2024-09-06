@@ -6,6 +6,7 @@ import Contact from './Contact'
 import Tableform from './Tableform'
 import Menu from './Menu'
 import { Link, NavLink } from 'react-router-dom';
+import './App.css';
 
 
 const Home = () => {
@@ -14,7 +15,7 @@ const Home = () => {
 
   return (
     <>
-    <div className='container-fluid bg-light mt-5 '>
+    <div className='container-fluid  mt-5 '>
         <div className='row'>
             <div className='col-md-12 d-flex'>
 
@@ -29,7 +30,7 @@ const Home = () => {
                 </div>
             </div>
             <div className='col-md-6 ms-5'>
-                <img src='images/hero-img.png' className='img-fluid' style={{width:'400px',height:'400px'}}/>
+                <img src='images/hero-img.png' className='img-fluid float-animation' style={{width:'400px',height:'400px'}}/>
             </div>
             </div>
         </div>

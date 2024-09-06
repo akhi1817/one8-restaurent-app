@@ -145,18 +145,18 @@ const showdinneritem=()=>{
   return (
     <>
     
-    <div className="container-fluid mt-5">
+    <div className="container-fluid mt-5 bg-light">
         <div className='row px-3 mt-3'>
         <h4 className='text-secondary text-center'>Our Menu</h4>
         <h1 className='text-dark text-center mb-5'>Check Our <span className='text-danger'>Yummy Menu</span></h1>
         <hr/>
             <div className='col-md-12 p-3'>
                 <div className='col-md-12 text-center'>
-                <button className='btn btn-danger px-3 mx-3' onClick={()=>showallProducts()}>All Items</button>
-                <button className='btn btn-success px-3 mx-3'onClick={()=>showstarteritem()}>Starter</button>
-                <button className='btn btn-primary px-3 mx-3' onClick={()=>showbreakfastitem()}>Breakfast</button>
-                <button className='btn btn-secondary px-3 mx-3' onClick={()=>showlunchitem()}>Lunch</button>
-                <button className='btn btn-warning px-3 mx-3' onClick={()=>showdinneritem()}>Dinner</button>
+                <button className=' fw-bold btn btn-danger px-3 mx-3' onClick={()=>showallProducts()}>All Items</button>
+                <button className=' fw-bold btn btn-success px-3 mx-3'onClick={()=>showstarteritem()}>Starter</button>
+                <button className=' fw-bold btn btn-primary px-3 mx-3' onClick={()=>showbreakfastitem()}>Breakfast</button>
+                <button className=' fw-bold btn btn-secondary px-3 mx-3' onClick={()=>showlunchitem()}>Lunch</button>
+                <button className=' fw-bold btn btn-warning px-3 mx-3' onClick={()=>showdinneritem()}>Dinner</button>
                 </div>  
                <div className='row px-5'>
                 {
@@ -233,6 +233,7 @@ const showdinneritem=()=>{
         </div>
     </div>
 
+{/* testimonials */}
     <div className="container-fluid mt-5">
         <div className='row px-3 mt-3'>
         <h4 className='text-secondary text-center'>Testimonials</h4>

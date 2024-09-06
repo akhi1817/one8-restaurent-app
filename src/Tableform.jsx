@@ -127,7 +127,7 @@ const Tableform = () => {
                         <div className='col-md-12 mt-5 text-center'>
                             <img src='images/reservation.jpg' className='img-fluid' style={{width:'50vw',height:'50vh '}} alt='reservation'/>
                         </div>
-                        <div className='col-md-12 mt-5 p-4 form-control text-center'>
+                        <div className='col-md-12 mt-5 p-4 form-control text-center bg-light'>
                             <form onSubmit={saveForm}>
                                 <div className='col-md-12 d-flex px-3 my-3'>
                                     <div className='col-md-4 px-3'>

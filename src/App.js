@@ -14,6 +14,7 @@ import Menu from './Menu';
 import Admin from './Admin';
 import App_Layout from './App_Layout';
 import Editcontact from './Editcontact';
+
 // import '@fontsource/roboto'; // Defaults to weight 400
 import '@fontsource/poppins';
 import './App.css';
@@ -46,8 +47,7 @@ const App = () => {
       </Routes>
      <Footer/>
     </Router>
-    <h1 data-aos="fade-up">App component</h1>
-
+  
     </>
   )
 }
