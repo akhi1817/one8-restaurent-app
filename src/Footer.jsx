@@ -23,10 +23,10 @@ const Footer = () => {
                 </div>
                 <div className='col-md-3'>
                     <h3 className='text-warning'>Follow Us</h3>
-                    <i class="bi bi-whatsapp  fs-4 text-success px-3"></i>   
-                    <i class="bi bi-facebook  fs-4 text-primary px-3"></i>
-                    <i class="bi bi-twitter-x fs-4 text-white px-3"></i>
-                    <i class="bi bi-instagram fs-4 text-danger px-3"></i>
+                   <Link to='https://wa.link/a3gstj' ><i class="bi bi-whatsapp  fs-4 text-success px-3"></i> </Link>  
+                   <Link to='https://www.facebook.com/'><i class="bi bi-facebook  fs-4 text-primary px-3"></i></Link>
+                    <Link to='https://x.com/'><i class="bi bi-twitter-x fs-4 text-white px-3"></i></Link>
+                    <Link to='https://www.instagram.com/'> <i class="bi bi-instagram fs-4 text-danger px-3"></i></Link>
                    
                 </div>
             </div>

@@ -21,11 +21,11 @@ const About = () => {
                     </div>
                 </div>
                 <div className='col-md-12 d-flex flex-direction-wrap-reverse mt-3'>
-                    <div className='col-md-6 ms-5 mt-3 px-5 mx-3'>
-                        <div className='col-md-6 border border-4 border-secondary text-center px-3 mx-3 '>
+                    <div className='col-md-6 ms-5 mt-3 px-5 mx-3  border border-4 border-secondary w-50 h-25 text-center    '>
+                        
                           <h3 className='text-secondary'>Book A Table</h3> 
                           <h2 className='text-danger'>+91 8177819283</h2>
-                        </div>
+                        
                     </div>
                     <div className='col-md-6 mt-3'>
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/_dui6BUmMBg?si=ym-YR74k0FmQLycO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

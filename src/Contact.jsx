@@ -89,8 +89,8 @@ const Contact = () => {
         <>
             <div className='container-fluid p-5 mt-5 bg-light'>
                 <div className='row'>
-                    <h4 className='text-secondary text-center'>Contact Us</h4>
-                    <h1 className='text-dark text-center'>Need Help? <span className='text-danger'>Contact Us</span></h1>
+                    <h4 className=' bg-light text-secondary text-center'>Contact Us</h4>
+                    <h1 className=' bg-light text-dark text-center'>Need Help? <span className='text-danger'>Contact Us</span></h1>
                     <hr />
                     <div className='col-md-12 mt-5 p-5 form-control text-center'>
                         <form onSubmit={saveForm}>
@@ -127,6 +127,7 @@ const Contact = () => {
                     </div>
                     <div className='col-md-12 mt-5 d-flex px-3'>
                         <div className='col-md-6 mx-2'>
+                            <div className=''></div>
                             <div className='card shadow-lg  rounded bg-danger text-white px-5 my-3'>
                                 <h3>Address</h3>
                                 <p>A108 Adam Street, New York, NY 535022</p>
