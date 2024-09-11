@@ -152,11 +152,13 @@ const showdinneritem=()=>{
         <hr/>
             <div className='col-md-12 p-3'>
                 <div className='col-md-12 text-center'>
-                <button className=' fw-bold btn btn-danger px-3 mx-3' onClick={()=>showallProducts()}>All Items</button>
-                <button className=' fw-bold btn btn-success px-3 mx-3'onClick={()=>showstarteritem()}>Starter</button>
-                <button className=' fw-bold btn btn-primary px-3 mx-3' onClick={()=>showbreakfastitem()}>Breakfast</button>
-                <button className=' fw-bold btn btn-secondary px-3 mx-3' onClick={()=>showlunchitem()}>Lunch</button>
-                <button className=' fw-bold btn btn-warning px-3 mx-3' onClick={()=>showdinneritem()}>Dinner</button>
+                    <div className="d-flex flex-wrap justify-content-center">
+                        <button className="fw-bold btn btn-danger px-3 mx-2 my-2" onClick={() => showallProducts()} >All Items</button>
+                        <button className="fw-bold btn btn-success px-3 mx-2 my-2" onClick={() => showstarteritem()} > Starter </button>
+                        <button className="fw-bold btn btn-primary px-3 mx-2 my-2" onClick={() => showbreakfastitem()} > Breakfast </button>
+                        <button className="fw-bold btn btn-secondary px-3 mx-2 my-2" onClick={() => showlunchitem()} > Lunch </button>
+                        <button className="fw-bold btn btn-warning px-3 mx-2 my-2" onClick={() => showdinneritem()} > Dinner </button>
+                    </div>
                 </div>  
                <div className='row px-5'>
                 {
@@ -335,6 +337,9 @@ const showdinneritem=()=>{
                 </div>
         </div>
     </div>
+  
+
+
     </>
   )
 }

@@ -46,6 +46,7 @@ const Tabledata = () => {
                             <th>Time</th>
                             <th>Number Of People</th>
                             <th>Message</th>
+                            <th>Delete </th>
                         </tr>
                     </thead>
                     <tbody>
@@ -61,7 +62,7 @@ const Tabledata = () => {
                                         <td>{val.time}</td>
                                         <td>{val.people}</td>
                                         <td>{val.message}</td>
-                                        <td><i class='fa fa-trash fw-bold text-danger'onClick={()=>{if(window.confirm('Are you sure ?')){DeleteBooking(val.id)}}}></i></td>
+                                        <td><i class='bi bi-trash3-fill fw-bold text-danger'onClick={()=>{if(window.confirm('Are you sure ?')){DeleteBooking(val.id)}}}></i></td>
 
                                     </tr>
                                 )

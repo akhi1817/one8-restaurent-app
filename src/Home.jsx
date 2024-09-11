@@ -15,23 +15,24 @@ const Home = () => {
 
   return (
     <>
-    <div className='container-fluid  mt-5 '>
-        <div className='row'>
-            <div className='col-md-12 d-flex'>
-
-            
-            <div className='col-md-6 p-5'>
-                <h1 data-aos="fade-up" className='text-dark'>Enjoy Your Healthy<br/>
-                <span className='text-danger'>Delicious Food</span></h1>
-                <h3 className='text-secondary'>We are team of talented designers making<br/> websites with Bootstrap</h3>
-                <div className='d-flex px-3 mt-5'>
-                    <button className='btn btn-danger text-light rounded-pill mx-3'><NavLink to='/tableform' className='text-light nav-link'>Book A Table</NavLink></button>
-                    <button className='btn btn-outline-success rounded-pill mx-3'><Link className='link text-decoration-none text-dark' to='https://youtu.be/_dui6BUmMBg?si=ym-YR74k0FmQLycO'><i class="fa fa-play me-3"></i>Watch Video</Link></button>
+  
+    <div className="container-fluid mt-5">
+        <div className="row">
+            <div className="col-md-12 d-flex flex-column flex-md-row align-items-center">
+                <div className="col-12 col-md-6 p-5">
+                    <h1 data-aos="fade-up" className="text-dark">Enjoy Your Healthy<br /><span className="text-danger">Delicious Food</span></h1>
+                    <h3 className="text-secondary">We are a team of talented designers making <br />  websites with Bootstrap</h3>
+                    <div className="d-flex flex-column flex-sm-row px-3 mt-5">
+                      <button className="btn btn-danger text-light fw-bold rounded-pill mx-3 mb-3 mb-sm-0"><Link to="/tableform" className="text-light nav-link">Book A Table</Link>
+                      </button>
+                      <button className="btn btn-outline-success rounded-pill fw-bold  mx-3">
+                        <Link className="link text-decoration-none text-warning" to="https://youtu.be/_dui6BUmMBg?si=ym-YR74k0FmQLycO"><i className="fa fa-play me-3"></i>Watch Video</Link>
+                      </button>
+                    </div>
                 </div>
-            </div>
-            <div className='col-md-6 ms-5'>
-                <img src='images/hero-img.png' className='img-fluid float-animation' style={{width:'400px',height:'400px'}}/>
-            </div>
+                <div className="col-12 col-md-6 mt-4 mt-md-0 text-center">
+                    <img src="images/hero-img.png" className="img-fluid float-animation" style={{ width: "400px", height: "400px" }} alt="Delicious Food"/>
+                </div>
             </div>
         </div>
     </div>

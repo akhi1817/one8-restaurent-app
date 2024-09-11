@@ -51,7 +51,7 @@ const Contactdata = () => {
                                     <th>Email</th>
                                     <th>Subject</th>
                                     <th>Message</th>
-                                    <th></th>
+                                    <th>Delete</th>
                                     <th></th>
                                 </tr>
                             </thead>
@@ -65,7 +65,7 @@ const Contactdata = () => {
                                                     <td>{val.email}</td>
                                                     <td>{val.subject}</td>
                                                     <td>{val.message}</td>
-                                                    <td><i class='fa fa-trash fw-bold text-danger pe-auto'onClick={()=>{if(window.confirm('Are you sure ?')){DeleteUser(val.id)}}}></i></td>
+                                                    <td><i class='bi bi-trash3-fill fw-bold text-danger pe-auto'onClick={()=>{if(window.confirm('Are you sure ?')){DeleteUser(val.id)}}}></i></td>
                                                     <td><NavLink to={`/editcontact/${val.id}`}><i class='fa fa-edit fw-bold text-success pe-auto'></i></NavLink></td>
                                                 </tr>
                                             )
