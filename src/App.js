@@ -25,7 +25,7 @@ const App = () => {
     <>
     <Router>
       <Navbar/>
-      <Admin/>
+  
       <Routes>
         <Route path='/' element={<App_Layout/>}/>
         <Route index element={<Home/>}/>
