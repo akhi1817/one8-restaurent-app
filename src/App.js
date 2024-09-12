@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import {Route, BrowserRouter as Router, Routes} from 'react-router-dom';
 import Home from './Home';
 import About from './About';
@@ -18,9 +18,19 @@ import Editcontact from './Editcontact';
 // import '@fontsource/roboto'; // Defaults to weight 400
 import '@fontsource/poppins';
 import './App.css';
+// aos animation 
+import AOS from 'aos';
+
 
 
 const App = () => {
+
+  useEffect(() => {
+    AOS.init({
+      duration: 2000,
+      once: true,     
+    });
+  }, []);
   return (
     <>
     <Router>

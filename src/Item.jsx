@@ -7,8 +7,8 @@ const Item = (props) => {
         <div className='card bg-white mt-3 text-center'>
             <div className='card-body'>
                 <img src={props.img} className='img-fluid' style={{height:'250px'}} alt='product '/>
-                <h1 className='text-dark'>{props.name}</h1>
-                <p className='text-secondary'>{props.desc}</p>
+                <h1 className='text-secondary'>{props.name}</h1>
+                <p className='text-success'>{props.desc}</p>
                 <h3 className='text-danger'>{props.price}</h3>
             </div>
         </div>

@@ -7,12 +7,13 @@ import reportWebVitals from './reportWebVitals';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import '../node_modules/bootstrap/dist/js/bootstrap.min.js';
 // import aos animation
-import Aos from 'aos';
+import 'aos/dist/aos.css';
+
 // import '../node_modules/bootstrap-icons/icons';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
 
-Aos.init();
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

@@ -5,9 +5,9 @@ const Events = () => {
     <>
     
     <div className='container-fluid p-5 mt-5'>
-        <div className='row'>
+        <div data-aos="fade-up" className='row'>
         <h4 className='text-secondary text-center'>Events</h4>
-        <h1 className='text-dark text-center'>Enjoy our <span className='text-danger'>Blissful Events</span></h1>
+        <h1 className='text-dark text-center'>Enjoy our <span className='text-success'>Blissful Events</span></h1>
         <hr/>
              <div className='col-md-12 mt-2 p-3'>
              <div id="partyCarousel" className="carousel slide" data-bs-ride="carousel">

@@ -6,12 +6,12 @@ const Chef = () => {
   
    <div className="container-fluid mt-5 bg-light">
         <div className="row mt-5">
-            <h4 className="text-secondary text-center">Chefs</h4>
-            <h1 className="text-dark text-center">Our Professional<span className="text-danger"> Chefs</span></h1>
+            <h4 data-aos="fade-up" className="text-secondary text-center">Chefs</h4>
+            <h1 data-aos="fade-up" className="text-dark text-center">Our Professional<span className="text-success"> Chefs</span></h1>
             <hr />
         <div className="col-md-12 mt-3">
             <div className="row gx-3 gy-4">
-                <div className="col-md-4 col-sm-12">
+                <div data-aos="fade-right" className="col-md-4 col-sm-12">
                     <div className="card">
                         <div className="card-body text-center">
                             <img src="images/chefs/chefs-1.jpg" className="img-fluid rounded-circle" style={{ width: "80%", height: "auto" }} alt="Chef Walter White" />
@@ -29,7 +29,7 @@ const Chef = () => {
                         </div>
                     </div>
                 </div>
-                <div className="col-md-4 col-sm-12">
+                <div data-aos="zoom-in" className="col-md-4 col-sm-12">
                 <div className="card">
                     <div className="card-body text-center">
                         <img src="images/chefs/chefs-2.jpg" className="img-fluid rounded-circle" style={{ width: "80%", height: "auto" }} alt="Chef Sarah Johnson" />
@@ -47,7 +47,7 @@ const Chef = () => {
                     </div>
                 </div>
             </div>
-            <div className="col-md-4 col-sm-12">
+            <div data-aos="fade-left" className="col-md-4 col-sm-12">
                 <div className="card">
                     <div className="card-body text-center">
                         <img src="images/chefs/chefs-3.jpg" className="img-fluid rounded-circle" style={{ width: "80%", height: "auto" }} alt="Chef William Anderson" />

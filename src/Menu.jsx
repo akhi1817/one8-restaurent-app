@@ -147,17 +147,17 @@ const showdinneritem=()=>{
     
     <div className="container-fluid mt-5 bg-light">
         <div className='row px-3 mt-3'>
-        <h4 className='text-secondary text-center'>Our Menu</h4>
-        <h1 className='text-dark text-center mb-5'>Check Our <span className='text-danger'>Yummy Menu</span></h1>
+        <h4 data-aos="fade-up" className='text-secondary text-center'>Our Menu</h4>
+        <h1 data-aos="fade-up" className='text-dark text-center mb-5'>Check Our <span className='text-success'>Yummy Menu</span></h1>
         <hr/>
             <div className='col-md-12 p-3'>
                 <div className='col-md-12 text-center'>
-                    <div className="d-flex flex-wrap justify-content-center">
-                        <button className="fw-bold btn btn-danger px-3 mx-2 my-2" onClick={() => showallProducts()} >All Items</button>
-                        <button className="fw-bold btn btn-success px-3 mx-2 my-2" onClick={() => showstarteritem()} > Starter </button>
-                        <button className="fw-bold btn btn-primary px-3 mx-2 my-2" onClick={() => showbreakfastitem()} > Breakfast </button>
-                        <button className="fw-bold btn btn-secondary px-3 mx-2 my-2" onClick={() => showlunchitem()} > Lunch </button>
-                        <button className="fw-bold btn btn-warning px-3 mx-2 my-2" onClick={() => showdinneritem()} > Dinner </button>
+                    <div  className="d-flex flex-wrap justify-content-center">
+                        <button data-aos="zoom-in-right" className="fw-bold btn btn-danger px-3 mx-2 my-2" onClick={() => showallProducts()} >All Items</button>
+                        <button data-aos="zoom-in-right" className="fw-bold btn btn-success px-3 mx-2 my-2" onClick={() => showstarteritem()} > Starter </button>
+                        <button data-aos="zoom-in" className="fw-bold btn btn-primary px-3 mx-2 my-2" onClick={() => showbreakfastitem()} > Breakfast </button>
+                        <button data-aos="zoom-in-left" className="fw-bold btn btn-secondary px-3 mx-2 my-2" onClick={() => showlunchitem()} > Lunch </button>
+                        <button data-aos="zoom-in-left" className="fw-bold btn btn-warning px-3 mx-2 my-2" onClick={() => showdinneritem()} > Dinner </button>
                     </div>
                 </div>  
                <div className='row px-5'>
@@ -168,7 +168,7 @@ const showdinneritem=()=>{
                     showstarter ?
                     starter.map((val)=>{
                         return(
-                            <div className='col-md-4'>
+                            <div data-aos="zoom-in" className='col-md-4'>
                                 <Item
                                 img={val.img}
                                 name={val.name}
@@ -185,7 +185,7 @@ const showdinneritem=()=>{
                     showbreakfast ?
                     Breakfast.map((val)=>{
                         return(
-                            <div className='col-md-4'>
+                            <div data-aos="zoom-in-left" className='col-md-4'>
                                 <Item
                                 img={val.img}
                                 name={val.name}
@@ -201,7 +201,7 @@ const showdinneritem=()=>{
                     showlunch ?
                     Lunch.map((val)=>{
                         return(
-                            <div className='col-md-4'>
+                            <div data-aos="zoom-in-right" className='col-md-4'>
                                 <Item
                                 img={val.img}
                                 name={val.name}
@@ -218,7 +218,7 @@ const showdinneritem=()=>{
                     showdinner ?
                     Dinner.map((val)=>{
                         return(
-                            <div className='col-md-4'>
+                            <div data-aos="zoom-in-left" className='col-md-4'>
                                 <Item
                                 img={val.img}
                                 name={val.name}
@@ -238,13 +238,13 @@ const showdinneritem=()=>{
 {/* testimonials */}
     <div className="container-fluid mt-5">
         <div className='row px-3 mt-3'>
-        <h4 className='text-secondary text-center'>Testimonials</h4>
-        <h1 className='text-dark text-center mb-5'>What Are They <span className='text-danger'>Saying About Us</span></h1>
+        <h4 data-aos="fade-up" className='text-secondary text-center'>Testimonials</h4>
+        <h1 data-aos="fade-up" className='text-dark text-center mb-5'>What Are They <span className='text-success'>Saying About Us</span></h1>
         <hr/>
 
                 <div className='col-md-12 justify-content-center align-item-center mt-3 '>
                     <div className='row p-3 '>
-                        <div className='col-md-6 mt-4'>
+                        <div data-aos="fade-right" className='col-md-6 mt-4'>
                             <div className='card'>
                                 <div className='card-body d-flex bg-primary text-white'>
                                     <div>
@@ -266,7 +266,7 @@ const showdinneritem=()=>{
 
                            
                         </div>
-                        <div className='col-md-6 mt-4'>
+                        <div data-aos="fade-left" className='col-md-6 mt-4'>
                             <div className='card'>
                                 <div className='card-body d-flex bg-primary text-white'>
                                     <div>
@@ -288,7 +288,7 @@ const showdinneritem=()=>{
                             
                            
                         </div>
-                        <div className='col-md-6 mt-4'>
+                        <div data-aos="fade-right" className='col-md-6 mt-4'>
                             <div className='card'>
                                 <div className='card-body d-flex bg-primary text-white'>
                                     <div>
@@ -310,7 +310,7 @@ const showdinneritem=()=>{
                             
                            
                         </div>
-                        <div className='col-md-6 mt-4'>
+                        <div data-aos="fade-left" className='col-md-6 mt-4'>
                             <div className='card'>
                                 <div className='card-body d-flex bg-primary text-white'>
                                     <div>
