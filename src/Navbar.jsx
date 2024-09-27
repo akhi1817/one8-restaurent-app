@@ -20,7 +20,7 @@ const Navbar = () => {
             <li className="nav-item px-3"><NavLink to="/menu" className="nav-link text-light">Menu</NavLink></li>
             <li className="nav-item px-3"><NavLink to="/events" className="nav-link text-light">Events</NavLink></li>
             <li className="nav-item px-3"><NavLink to="/contact" className="nav-link text-light">Contact</NavLink></li>
-            <li className="nav-item px-3"><NavLink to="/tableform" className="nav-link"><button className="btn btn-danger text-light rounded-pill">Book A Table</button></NavLink></li>
+            <li className="nav-item px-3"><NavLink to="/tableform" className="nav-link"><button className="btn btn-dangern text-light rounded-pill">Book A Table</button></NavLink></li>
           </ul>
         </div>
       </div>
