@@ -6,7 +6,7 @@ const Contactdata = () => {
 
 
     const[data,setdata]=useState([]);
-    const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:3000/contact';
+    const API_URL = `${process.env.REACT_APP_API_URL}/contact` || 'http://localhost:3000/contact';
 
     const LoadData=async()=>{
 

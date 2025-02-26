@@ -11,7 +11,7 @@ const Editcontact=()=>{
 
    const Getdata=async()=>{
 
-    const result=await Axios.get(`http://localhost:3000/contact/${id}`);
+    const result=await Axios.get(`https://one8-restaurent-app.vercel.app/contact/${id}`);
     console.log(result)
     console.log(result.data);
 

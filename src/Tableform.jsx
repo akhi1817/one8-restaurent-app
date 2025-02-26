@@ -38,7 +38,7 @@ const Tableform = () => {
         // console.log('Submitted Data:', data);
 
         try {
-            const response = await Axios.post('http://localhost:3000/booking-table', data);
+            const response = await Axios.post('https://one8-restaurent-app.vercel.app/booking-table', data);
             console.log('Response:', response.data);
             alert("Table booked successfully!");
             setName('');

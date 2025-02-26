@@ -7,7 +7,7 @@ const Tabledata = () => {
 
     const LoadData=async()=>{
         try{
-            const result=await Axios.get('http://localhost:3000/booking-table');
+            const result=await Axios.get('https://one8-restaurent-app.vercel.app/booking-table');
             console.log(result.data);
             console.log("Success!!!");
             setdata(result.data);

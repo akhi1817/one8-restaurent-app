@@ -32,7 +32,7 @@ const Contact = () => {
         // console.log('Submitted Data:', data);
 
         try {
-            const response = await Axios.post('http://localhost:3000/contact', data);
+            const response = await Axios.post('https://one8-restaurent-app.vercel.app/contact', data);
             console.log('Response:', response.data);
             alert("Congratulations, submitted successfully!");
             setName('');
